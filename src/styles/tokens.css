@@ -1,0 +1,57 @@
+:root {
+  /* Color — paleta de herbario, no cream+terracota genérico */
+  --ink: #1E2A1B;           /* verde-negro, texto principal */
+  --paper: #F3EFE2;         /* papel de herbario, cálido pero no rosado */
+  --paper-raised: #EAE3CF;  /* tarjetas / superficies elevadas */
+  --leaf: #3C6647;          /* verde hoja — acción primaria, sección Publicaciones */
+  --leaf-deep: #223B29;     /* verde profundo — hover, textos sobre paper */
+  --amber: #B9852E;         /* flor/fruto — sección Tienda */
+  --root: #7C4A2D;          /* raíz — sección Talleres (tierra, no terracota rosado) */
+  --moss: #8A9273;          /* texto secundario, líneas divisorias */
+  --line: #D8CEB2;          /* bordes sutiles */
+
+  /* Tipografía */
+  --font-display: 'Fraunces', Georgia, serif;   /* títulos, etiqueta de espécimen */
+  --font-body: 'Work Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace; /* precios, categorías, fechas */
+
+  --radius: 4px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--moss);
+}
+
+a { color: inherit; }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
